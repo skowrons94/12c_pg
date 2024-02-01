@@ -3,6 +3,15 @@ import numpy as np
 from scipy import stats
 from brick.azr import AZR
 
+# We read the .azr file and set the external capture file to speed up the calculation
+azr = AZR('12c_pg.azr')
+
+# We'll read the data from the output file since it's already in the center-of-mass frame
+data    = np.vstack([np.loadtxt('output/'+f) for f in azr.config.data.output_files])
+x       = data[:, 0]
+y       = data[:, 5]
+dy_bare = data[:, 6]
+
 # Prior disributions for each sampled parameter (in AZURE2 order)
 priors = [
     stats.norm(1.63,0.12),
@@ -23,16 +32,14 @@ priors = [
     stats.norm(1.0,0.10),
     stats.norm(1.0,0.10),
     stats.norm(1.0,0.10),
+    stats.norm(1.0,0.10),
+    stats.norm(1.0,0.10),
+    stats.uniform(0, 100),
+    stats.uniform(0, 100),
+    stats.uniform(0, 100),
+    stats.uniform(0, 100),
+    stats.uniform(0, 100)
 ]
-
-# We read the .azr file and set the external capture file to speed up the calculation
-azr = AZR('12c_pg.azr')
-
-# We'll read the data from the output file since it's already in the center-of-mass frame
-data    = np.vstack([np.loadtxt('output/'+f) for f in azr.config.data.output_files])
-x       = data[:, 0]
-y       = data[:, 5]
-dy_bare = data[:, 6]
 
 # Prior log probability
 def lnPi(theta):
@@ -47,6 +54,7 @@ def lnl(theta):
 
 # Posterior log probability
 def lnP(theta):
+    theta = list( theta.valuesdict().values() )
     lnpi = lnPi(theta)
     if not np.isfinite(lnpi): return -np.inf
     return lnl(theta) + lnpi
