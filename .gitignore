@@ -3,4 +3,5 @@ __pycache__
 .DS_Store
 *.h5
 *.pickle
+.azure_history
 ```
