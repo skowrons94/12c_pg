@@ -4,4 +4,5 @@ __pycache__
 *.h5
 *.pickle
 .azure_history
+animation/temp/*
 ```
