@@ -1,15 +1,16 @@
-       Segment Key #1        1.000000e+00
-       Segment Key #2        1.000000e+00
-       Segment Key #3        1.000000e+00
-       Segment Key #4        1.000000e+00
-       Segment Key #5        1.000000e+00
-       Segment Key #6        1.000000e+00
-       Segment Key #7        1.000000e+00
-       Segment Key #8        1.000000e+00
-       Segment Key #9        1.000000e+00
-       Segment Key #10        1.000000e+00
-       Segment Key #11        1.000000e+00
-       Segment Key #12        1.000000e+00
-       Segment Key #13        1.000000e+00
-       Segment Key #14        1.000000e+00
-       Segment Key #15        1.000000e+00
+segment_key_#, file_name, low_angle_bound, high_angle_bound, aframe, low_energy_bound, high_energy_bound, eframe, norm, shift
+1,data/meyer_84.dat,8.4300e+01,8.4300e+01,Lab,0.0000e+00,5.0000e+00,Lab,9.8673e-01,0
+2,data/meyer_114.dat,1.1450e+02,1.1450e+02,Lab,0.0000e+00,5.0000e+00,Lab,1.0198e+00,0
+3,data/meyer_144.dat,1.4410e+02,1.4410e+02,Lab,0.0000e+00,5.0000e+00,Lab,1.0086e+00,0
+4,data/skowronski_luna_hpge.dat,0.0000e+00,1.8000e+02,Lab,0.0000e+00,5.0000e+00,Lab,1.1870e+00,0
+5,data/skowronski_luna_bgo.dat,0.0000e+00,1.8000e+02,Lab,0.0000e+00,5.0000e+00,Lab,1.1552e+00,0
+6,data/skowronski_fels.dat,0.0000e+00,1.8000e+02,Lab,0.0000e+00,5.0000e+00,Lab,1.2479e+00,0
+7,data/gyurky.dat,0.0000e+00,1.8000e+02,Lab,0.0000e+00,5.0000e+00,Lab,9.9983e-01,0
+8,data/kettner_0.dat,0.0000e+00,0.0000e+00,Lab,0.0000e+00,5.0000e+00,Lab,1.2610e+00,0
+9,data/kettner_55.dat,5.5000e+01,5.5000e+01,Lab,0.0000e+00,5.0000e+00,Lab,1.1346e+00,0
+10,data/burtebaev.dat,0.0000e+00,1.8000e+02,Lab,0.0000e+00,5.0000e+00,Lab,8.9708e-01,0
+11,data/lamb.dat,0.0000e+00,1.8000e+02,Lab,0.0000e+00,5.0000e+00,Lab,1.3628e+00,0
+12,data/bailey.dat,0.0000e+00,1.8000e+02,Lab,0.0000e+00,5.0000e+00,Lab,1.2042e+00,0
+13,data/vogl.dat,0.0000e+00,1.8000e+02,Lab,0.0000e+00,5.0000e+00,Lab,1.2619e+00,0
+14,data/rolfs_0.dat,0.0000e+00,0.0000e+00,Lab,0.0000e+00,5.0000e+00,Lab,1.3837e+00,0
+15,data/rolfs_90.dat,9.0000e+01,9.0000e+01,Lab,0.0000e+00,5.0000e+00,Lab,1.2768e+00,0
